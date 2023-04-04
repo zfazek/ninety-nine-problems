@@ -5,13 +5,14 @@
 
 using namespace std;
 
-optional<int> last(const vector<int>& list) {
+template<class T>
+optional<T> last(const vector<T>& list) {
     if (list.empty()) return nullopt;
-    return optional<int>(list.back());
+    return optional<T>(list.back());
 }
 
 int main() {
-    assert(nullopt == last({}));
-    assert(10 == last({10}));
-    assert(10 == last({5, 10}));
+    assert(nullopt == last<int>({}));
+    assert(10 == last<int>({10}));
+    assert(10 == last<int>({5, 10}));
 }
