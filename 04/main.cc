@@ -12,7 +12,7 @@ size_t size(const T& l) {
 
 int main() {
     vector<int> l = {0, 1, 2, 3};
-    cout << to_string(l) << " " << size(l) << "\n";
+    cout << to_string(l) << " => " << size(l) << "\n";
     string s = "01234";
-    cout << to_string(s) << " " << size(s) << "\n";
+    cout << to_string(s) << " => " << size(s) << "\n";
 }

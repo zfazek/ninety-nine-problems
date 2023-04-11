@@ -13,9 +13,9 @@ bool is_palindrome(const string& str) {
 
 int main() {
     string str;
-    str = "abba";cout << str << " " << (is_palindrome(str) ? "true" : "false") << "\n";
-    str = "abca";cout << str << " " << (is_palindrome(str) ? "true" : "false") << "\n";
-    str = "a";cout << str << " " << (is_palindrome(str) ? "true" : "false") << "\n";
-    str = "";cout << str << " " << (is_palindrome(str) ? "true" : "false") << "\n";
+    str = "abba";cout << str << " => " << (is_palindrome(str) ? "true" : "false") << "\n";
+    str = "abca";cout << str << " => " << (is_palindrome(str) ? "true" : "false") << "\n";
+    str = "a";cout << str << " => " << (is_palindrome(str) ? "true" : "false") << "\n";
+    str = "";cout << str << " => " << (is_palindrome(str) ? "true" : "false") << "\n";
 
 }

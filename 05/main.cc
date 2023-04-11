@@ -17,7 +17,7 @@ C rev(const C& list) {
 
 int main() {
     vector<int> l;
-    l = {0, 1, 2, 3};cout << to_string(l) << " " << to_string(rev(l)) << "\n";
-    l = {0};cout << to_string(l) << " " << to_string(rev(l)) << "\n";
-    l = {};cout << to_string(l) << " " << to_string(rev(l)) << "\n";
+    l = {0, 1, 2, 3};cout << to_string(l) << " => " << to_string(rev(l)) << "\n";
+    l = {0};cout << to_string(l) << " => " << to_string(rev(l)) << "\n";
+    l = {};cout << to_string(l) << " => " << to_string(rev(l)) << "\n";
 }

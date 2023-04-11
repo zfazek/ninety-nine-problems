@@ -24,13 +24,13 @@ vector<char> compress(const vector<char>& list) {
 int main() {
     vector<char> list;
     list = {'a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e'};
-    cout << to_string(list) << " " << to_string(compress(list)) << "\n";
+    cout << to_string(list) << " => " << to_string(compress(list)) << "\n";
     list = {'a', 'a', 'c', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'a'};
-    cout << to_string(list) << " " << to_string(compress(list)) << "\n";
+    cout << to_string(list) << " => " << to_string(compress(list)) << "\n";
     list = {'a', 'a', 'a'};
-    cout << to_string(list) << " " << to_string(compress(list)) << "\n";
+    cout << to_string(list) << " => " << to_string(compress(list)) << "\n";
     list = {'a'};
-    cout << to_string(list) << " " << to_string(compress(list)) << "\n";
+    cout << to_string(list) << " => " << to_string(compress(list)) << "\n";
     list = {};
-    cout << to_string(list) << " " << to_string(compress(list)) << "\n";
+    cout << to_string(list) << " => " << to_string(compress(list)) << "\n";
 }
