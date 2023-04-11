@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 #include <iterator>
 #include <vector>
@@ -9,9 +10,8 @@ using namespace std;
 template <class C>
 C rev(const C& list) {
     C res;
-    for (long i = list.size() - 1; i >= 0; --i) {
-        res.insert(res.end(), list.at(i));
-    }
+    res.resize(list.size());
+    reverse_copy(list.begin(), list.end(), res.begin());
     return res;
 }
 
